@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NusaStat — portal statistik Indonesia: penduduk, ekonomi, harga, ketenagakerjaan, kemiskinan, pendidikan, dan kesehatan, dengan angka resmi BPS.">
+<title>NusaStat — Statistik Nusantara</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">NS</span>
+      <span class="brand-text"><strong>NusaStat</strong><small>Statistik Nusantara</small></span>
+    </a>
+    <div class="search-wrap">
+      <label class="visually-hidden" for="search-input">Cari indikator</label>
+      <input id="search-input" type="search" placeholder="Cari indikator… mis. inflasi, penduduk" autocomplete="off">
+      <div id="search-results" class="search-results" hidden></div>
+    </div>
+    <div class="selectors">
+      <label>Tahun <select id="year-select" aria-label="Pilih tahun data"></select></label>
+      <label>Provinsi <select id="province-select" aria-label="Pilih provinsi"></select></label>
+    </div>
+  </div>
+  <nav id="main-nav" class="main-nav" aria-label="Navigasi utama"></nav>
+</header>
+<main id="app" class="page"></main>
+<footer class="site-footer">
+  <p><strong>NusaStat — Statistik Nusantara.</strong> Angka di situs ini berasal dari publikasi
+  Badan Pusat Statistik (BPS) dan Survei Status Gizi Indonesia (SSGI) Kementerian Kesehatan,
+  dengan tahun dan sumber dicantumkan pada setiap angka. Situs ini bukan situs resmi BPS.</p>
+  <p>Seluruh data tersimpan di dalam situs ini; tidak ada permintaan jaringan saat dibuka.
+  Data terakhir diperbarui November 2026.</p>
+</footer>
+</body>
+</html>
